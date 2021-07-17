@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Carino Camminare</title>
+    <title>Unity WebGL Player | CarinoCamminare</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -17,24 +17,35 @@
         </div>
       </div>
       <div id="unity-mobile-warning">
-        WebGL builds are not supported on mobile devices.
+        スマートフォンでのプレイの場合、うまく動作しないことがあります。
       </div>
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">CarinoCamminare</div>
+      </div>
+      
+      <div id="update-log">
+        <br>
+        <h5>更新履歴</h5>
+        <div id="log">
+          <p class="logtitle">ver0.08</class><br>
+	設定画面を作成しました。Escキーから表示できます<br>
+	カメラのリセットをPキーからマウス右ボタンに変更しました
+        </div>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/07_BetaVersion.loader.js";
+      var loaderUrl = buildUrl + "/08.loader.js";
       var config = {
-        dataUrl: buildUrl + "/07_BetaVersion.data",
-        frameworkUrl: buildUrl + "/07_BetaVersion.framework.js",
-        codeUrl: buildUrl + "/07_BetaVersion.wasm",
+        dataUrl: buildUrl + "/08.data",
+        frameworkUrl: buildUrl + "/08.framework.js",
+        codeUrl: buildUrl + "/08.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "TaikiAoyama",
-        productName: "2DActionGame",
-        productVersion: "0.04",
+        companyName: "CarinoCamminareteam",
+        productName: "CarinoCamminare",
+        productVersion: "0.07",
       };
 
       var container = document.querySelector("#unity-container");
