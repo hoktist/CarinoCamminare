@@ -3,5 +3,24 @@
 	width: 600px;
 }
 #specinfo{
-	right: 0px;
+	left: 0px;
+}
+.play-btn{
+	
+	display: inline-block;
+	max-width: 200px;
+	text-align: left;
+	background-color: #00aeff;
+	font-size: 16px;
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 10px 24px;
+	border-radius: 4px;
+	border-bottom: 4px solid #008dce;
+}
+
+.play-btn:active{
+	transform: translateY(4px);
+	border-bottom:none;
 }
