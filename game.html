@@ -23,40 +23,30 @@
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">CarinoCamminare</div>
-      </div>
-      
-      <div id="update-log">
-        <br>
-        <h5>更新履歴</h5>
-        <div id="log">
-	<p class="logtitle">ver0.09</class><br>
-	ブロックが落ちてこないバグを修正<br>
-	カメラリセット時にキャラクターを中心にリセットできるように変更<br>
-	ステージ2の原型を作成<br>
-	ゴール後にParticleを追加
-	<br><br>
-          <p class="logtitle">ver0.08</class><br>
-	設定画面を作成しました。Escキーから表示できます<br>
-	カメラのリセットをPキーからマウス右ボタンに変更しました
-	<p class="logtitle">ver0.08.1</class><br>
-	日本語フォントが表示されない問題を修正<br><br>
-          <p class="logtitle">ver0.08</class><br>
-	設定画面を作成しました。Escキーから表示できます<br>
-	カメラのリセットをPキーからマウス右ボタンに変更しました
-        </div>
+      </div>  
+    </div>
+    <div id="update-log">
+      <br>
+      <h5>更新履歴</h5>
+      <div id="log">
+      <p class="logtitle">ver0.08.1</class><br>
+        日本語フォントが表示されない問題を修正<br><br>
+        <p class="logtitle">ver0.08</class><br>
+        設定画面を作成しました。Escキーから表示できます<br>
+        カメラのリセットをPキーからマウス右ボタンに変更しました
       </div>
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/09.loader.js";
+      var loaderUrl = buildUrl + "/10.loader.js";
       var config = {
-        dataUrl: buildUrl + "/09.data",
-        frameworkUrl: buildUrl + "/09.framework.js",
-        codeUrl: buildUrl + "/09.wasm",
+        dataUrl: buildUrl + "/10.data",
+        frameworkUrl: buildUrl + "/10.framework.js",
+        codeUrl: buildUrl + "/10.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "CarinoCamminareteam",
         productName: "CarinoCamminare",
-        productVersion: "0.09",
+        productVersion: "0.09.1",
       };
 
       var container = document.querySelector("#unity-container");
